@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/adjusted logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Prospective Software Engineer </p>
+                <h1>Hi, I'm <span>Peter Njoroge</span><br> From Baltimore, MD</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/sizedPrompicture.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p> My name is Peter Njoroge, I am a Freshman Computer Engineering student at the University of Maryland, College Park,
+                         enrolled in the James A. Clark School of Engineering and the University Honors College. I have a strong passion for 
+                         software engineering and am eager to pursue a career in this field.
+                         Outside of the classroom, I am extremely passionate for community service and am eager to give back.
+                          My long-term goal in tech is to create opportunities for the less fortunate to gain experience in technology,
+                           computer science specifically.
+                          Currently, I am actively seeking internship opportunities in software engineering roles.</p>
+
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                          </div>
+                          <div class="tab-contents active-tabs" id="skills">
+                            <ul>
+                                <li><span>Programming Languages:</span><br>Java, Python, JavaScript, HTML, CSS</li>
+                                <li><span>Programs/OS:</span><br>PyCharm, Eclipse, Arduino IDE, VScode, Git, AutoCAD, Microsoft Office, MacOS, Window’s OS</li>
+                                <li><span>Soft Skills:</span><br>Communication, Problem-solving, Adaptability, Time management, Detail Orientation</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>September 2021-August 2023</span><br>Fufillment Expert at Target</li>
+                                <li><span>Description:</span><br>Analyzed digital guest traffic patterns, adapting to changing demands.
+                                    Engaged authentically with guests, tailoring approaches based on cues.
+                                    Executed digital order fulfillment processes with a focus on accuracy and efficiency.</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University of Maryland College Park</span><br>Bachelor of Science in Computer Engineering, Expected May 2027.</li>
+                                <li><span>Honors/Awards:</span><br>University-Honors Honors College, Shewell Keim Scholarship in Computer Engineering, Lockheed Martin Scholorship</li>
+                                <li><span>Relavant Coursework:</span><br>Introduction to Object Orientated Programming, Calculus I</li>
+                                <li><span>Leadership Expereince:</span><br>UMD Black Student Union: Freshman Council Executive-Board Treasurer</li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tabs");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tabs");
+    }
+</script>
+</body>
+
+</html>
