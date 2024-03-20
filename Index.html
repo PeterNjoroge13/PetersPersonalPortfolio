@@ -7,6 +7,7 @@
     <title>Peter's Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://kit.fontawesome.com/c11dea94f2.js" crossorigin="anonymous"></script>
 
 <body>
     <div id="header">
@@ -17,7 +18,7 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -35,64 +36,142 @@
                     <img src="Images/sizedPrompicture.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title" >About Me</h1>
-                    <p> My name is Peter Njoroge, I am a Freshman Computer Engineering student at the University of Maryland, College Park,
-                         enrolled in the James A. Clark School of Engineering and the University Honors College. I have a strong passion for 
-                         software engineering and am eager to pursue a career in this field.
-                         Outside of the classroom, I am extremely passionate for community service and am eager to give back.
-                          My long-term goal in tech is to create opportunities for the less fortunate to gain experience in technology,
-                           computer science specifically.
-                          Currently, I am actively seeking internship opportunities in software engineering roles.</p>
+                    <h1 class="sub-title">About Me</h1>
+                    <p> My name is Peter Njoroge, I am a Freshman Computer Engineering student at the University of
+                        Maryland, College Park,
+                        enrolled in the James A. Clark School of Engineering and the University Honors College. I have a
+                        strong passion for
+                        software engineering and am eager to pursue a career in this field.
+                        Outside of the classroom, I am extremely passionate for community service and am eager to give
+                        back.
+                        My long-term goal in tech is to create opportunities for the less fortunate to gain experience
+                        in technology,
+                        computer science specifically.
+                        Currently, I am actively seeking internship opportunities in software engineering roles.</p>
 
-                          <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links"onclick="opentab('education')">Education</p>
-                          </div>
-                          <div class="tab-contents active-tabs" id="skills">
-                            <ul>
-                                <li><span>Programming Languages:</span><br>Java, Python, JavaScript, HTML, CSS</li>
-                                <li><span>Programs/OS:</span><br>PyCharm, Eclipse, Arduino IDE, VScode, Git, AutoCAD, Microsoft Office, MacOS, Window’s OS</li>
-                                <li><span>Soft Skills:</span><br>Communication, Problem-solving, Adaptability, Time management, Detail Orientation</li>
-                            </ul>
-                          </div>
-                          <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>September 2021-August 2023</span><br>Fufillment Expert at Target</li>
-                                <li><span>Description:</span><br>Analyzed digital guest traffic patterns, adapting to changing demands.
-                                    Engaged authentically with guests, tailoring approaches based on cues.
-                                    Executed digital order fulfillment processes with a focus on accuracy and efficiency.</li>
-                            </ul>
-                          </div>
-                          <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>University of Maryland College Park</span><br>Bachelor of Science in Computer Engineering, Expected May 2027.</li>
-                                <li><span>Honors/Awards:</span><br>University-Honors Honors College, Shewell Keim Scholarship in Computer Engineering, Lockheed Martin Scholorship</li>
-                                <li><span>Relavant Coursework:</span><br>Introduction to Object Orientated Programming, Calculus I</li>
-                                <li><span>Leadership Expereince:</span><br>UMD Black Student Union: Freshman Council Executive-Board Treasurer</li>
-                            </ul>
-                          </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tabs" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Java, Python, JavaScript, HTML, CSS</li>
+                            <li><span>Programs/OS:</span><br>PyCharm, Eclipse, Arduino IDE, VScode, Git, AutoCAD,
+                                Microsoft Office, MacOS, Window’s OS</li>
+                            <li><span>Soft Skills:</span><br>Communication, Problem-solving, Adaptability, Time
+                                management, Detail Orientation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>September 2021-August 2023</span><br>Fufillment Expert at Target</li>
+                            <li><span>Description:</span><br>Analyzed digital guest traffic patterns, adapting to
+                                changing demands.
+                                Engaged authentically with guests, tailoring approaches based on cues.
+                                Executed digital order fulfillment processes with a focus on accuracy and efficiency.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of Maryland College Park</span><br>Bachelor of Science in Computer
+                                Engineering, Expected May 2027.</li>
+                            <li><span>Honors/Awards:</span><br>University-Honors Honors College, Shewell Keim
+                                Scholarship in Computer Engineering, Lockheed Martin Scholorship</li>
+                            <li><span>Relavant Coursework:</span><br>Introduction to Object Orientated Programming,
+                                Calculus I</li>
+                            <li><span>Leadership Expereince:</span><br>UMD Black Student Union: Freshman Council
+                                Executive-Board Treasurer</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
         </div>
     </div>
-
-<script>
-    var tablinks =document.getElementsByClassName("tab-links");
-    var tabcontents =document.getElementsByClassName("tab-contents");
+    <!-- -----Services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Sercives</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Engineering Intern</h2>
+                    <p>Willing and able to provide amazing production and service as a Backend Engineeing Intern.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-window-restore"></i>
+                    <h2>Frontend Engineering Intern</h2>
+                    <p>Willing and able to provide amazing production and service as a Frontend Engineeing Intern.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Data Analysis/ IT intern</h2>
+                    <p>Willing and able to provide amazing production and service as a Data Analysis and or IT intern.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----Projects--------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/hospitaledit.jpg">
+                    <div class="layer">
+                        <h3>Mock Hospital Database</h3>
+                        <p>Designed and implemented a Hospital Management System using Java Swing for the graphical user interface and
+                            Java for the backend, showcasing skills in backend engineering.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/mediafinal.jpg">
+                    <div class="layer">
+                        <h3>Media Rental Manager</h3>
+                        <p>Developed a MediaRentalManager Java class for a digital Redbox-like system, incorporating essential classes and
+                            interfaces. Efficiently managed customer and media databases using Array Lists, and object-oriented programming.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/otvFinal.jpg">
+                    <div class="layer">
+                        <h3>Water Sampling OTV</h3>
+                        <p>Planned, constructed, and developed a specialized Automated Guided Vehicle (AGV) for water sampling tasks.
+                            Orchestrated AGV navigation to autonomously collect a 20ML water sample, utilizing Ultrasonic Sensor for depth
+                            measurement, DIY salinity sensor for water assessment, and integrated Arduino Color Sensor for pollution detection.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
     
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tabs");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tabs");
-    }
-</script>
+
+
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tabs");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tabs");
+                }
+            </script>
 </body>
 
 </html>
