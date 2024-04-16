@@ -14,13 +14,15 @@
         <div class="container">
             <nav>
                 <img src="Images/adjusted logo.jpg" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Prospective Software Engineer </p>
@@ -128,7 +130,7 @@
                         <h3>Mock Hospital Database</h3>
                         <p>Designed and implemented a Hospital Management System using Java Swing for the graphical user interface and
                             Java for the backend, showcasing skills in backend engineering.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://github.com/PeterNjoroge13/HospitalManagementDatabase"  target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -137,7 +139,7 @@
                         <h3>Media Rental Manager</h3>
                         <p>Developed a MediaRentalManager Java class for a digital Redbox-like system, incorporating essential classes and
                             interfaces. Efficiently managed customer and media databases using Array Lists, and object-oriented programming.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://gitfront.io/r/PeterNj/nkHfyr3dq37y/Peter-Njoroge-Projects/"  target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -147,16 +149,39 @@
                         <p>Planned, constructed, and developed a specialized Automated Guided Vehicle (AGV) for water sampling tasks.
                             Orchestrated AGV navigation to autonomously collect a 20ML water sample, utilizing Ultrasonic Sensor for depth
                             measurement, DIY salinity sensor for water assessment, and integrated Arduino Color Sensor for pollution detection.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://docs.google.com/presentation/d/1LcwFmxdH8cMm3QzI6pzajGubWqsy_Mw0POo9pj2a1Ao/edit#slide=id.g285f4baae2f_0_40" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
             <a href="#" class="btn">See More</a>
         </div>
     </div>
-    
-
-
+ <!-- -----Contact--------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me </h1>
+                <p><i class="fas fa-paper-plane"></i>peterkimani2005@yahoo.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>(410)-424-8784</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/peter-njoroge13/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://app.joinhandshake.com/stu/users/51641342" target="_blank"><i class="fas fa-handshake"></i></a>
+                    <a href="https://github.com/PeterNjoroge13" target="_blank"> <i class="fab fa-github"></i></a>
+                </div>
+                <a href="Images/PeterNjorogeResume.pdf" download class="btn btn2">Download Resume</a>
+             </div>
+            <div class="contact-right">
+                <form>
+<input type="text" name = "Name" placeholder="Your Name" required>
+<input type="email" name="Email"placeholder= "Your Email" required>
+<textarea name=""  rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">Submit</button>
+                </form> 
+            </div>
+        </div>
+    </div>
+ </div>
             <script>
                 var tablinks = document.getElementsByClassName("tab-links");
                 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -170,6 +195,15 @@
                     }
                     event.currentTarget.classList.add("active-link");
                     document.getElementById(tabname).classList.add("active-tabs");
+                }
+            </script>
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+                function openmenu(){
+                    sidemenu.style.right ="0";
+                }
+                function closemenu(){
+                    sidemenu.style.right ="-200px";
                 }
             </script>
 </body>
