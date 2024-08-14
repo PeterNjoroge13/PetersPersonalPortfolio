@@ -38,7 +38,7 @@ nav {
 }
 .logo{
     position: absolute; /* Ensure the nav is positioned relative to its nearest positioned ancestor */
-    top: 0; /* Position it at the top of the screen */
+    top: 0; 
     left: 0;
     width: 140px;
 }
