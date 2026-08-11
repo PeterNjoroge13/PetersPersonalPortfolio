@@ -4,238 +4,646 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peter's Personal Portfolio</title>
+    <title>Peter Njoroge - Software Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c11dea94f2.js" crossorigin="anonymous"></script>
 </head>
-<script src="https://kit.fontawesome.com/c11dea94f2.js" crossorigin="anonymous"></script>
 
 <body>
-    <body>
-        <div id="header">
-            <div class="container">
-                <div class="header-content">
-                    <div class="header-text">
-                        <p>Prospective Software Engineer </p>
-                        <h1>Hi, I'm <span>Peter Njoroge</span><br> From Baltimore, MD</h1>
-                    </div>
-                    <img src="Images/adjusted logo.jpg" class="logo">
-                </div>
-                <nav>
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Peter Njoroge</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Focus</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-    </body>
-    <!-- -----about--------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/professional photo copy.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p> My name is Peter Njoroge, I am a Rising Sophmore Computer Engineering student at the University of
-                        Maryland, College Park,
-                        enrolled in the James A. Clark School of Engineering and the University Honors College. I have a
-                        strong passion for
-                        software engineering and am eager to pursue a career in this field.
-                        Outside of the classroom, I am extremely passionate for community service and am eager to give
-                        back.
-                        My long-term goal in tech is to create opportunities for the less fortunate to gain experience
-                        in technology,
-                        computer science specifically.
-                        Currently, I am actively seeking internship opportunities in software engineering roles.</p>
+    </nav>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tabs" id="skills">
-                        <ul>
-                            <li><span>Programming Languages:</span><br>Java, Python, JavaScript, HTML/CSS, Express/Node.js</li>
-                            <li><span>Programs/OS:</span><br>PyCharm, Eclipse, Arduino IDE, VScode, Git, AutoCAD,
-                                Microsoft Office, MacOS, Window’s OS</li>
-                            <li><span>Soft Skills:</span><br>Communication, Problem-solving, Adaptability, Time
-                                management, Detail Orientation</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Summer 2024</span><br>Amazon x CodePath Software Engineering Apprentice</li>
-                            <li><span>Description:</span><br>-Engaged in collaborative coding projects, applying data structures and algorithms to real-world scenarios and practical problems,<br> enhancing ability to work effectively in a group setting</li>
-                                
-                                <li><span></span>-Prepared for professional career through immersive workshops, tech-related speaker engagements/projects, <br>   and direct mentorship from Amazon employees</li>
-                                
-                                <li><span></span>-Gained technical skills through participation in an Intermediate Technical Interview Prep course</li>
-                                
-                                <li><span></span>-Attended technical events at Amazon HQ2</li>
-                                <li><span>Summer 2024</span><br>Capital One Software Engineering Summit</li>
-                                <li><span>Description:</span><br>-Participated in Capital One's Black & Hispanic Tech Summit, engaging in advanced tech workshops, and a
-                                    competitive hackathon, while expanding my professional network and enhancing my problem-solving skills.</li>
-                                    <li><span>September 2024</span><br>Incoming JPMorgan Chase(Code For Good)</li>
-                                    <li><span>Description:</span><br>-Participating in the highly selective CFG Hackathon, tasked with designing a technical solution for a non-profit organization.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>University of Maryland College Park</span><br>Bachelor of Science in Computer
-                                Engineering, Expected May 2027. GPA: 3.75/4.00</li>
-                            <li><span>Honors/Awards:</span><br>University-Honors Honors College, Shewell Keim
-                                Scholarship in Computer Engineering, Lockheed Martin Scholarship</li>
-                            <li><span>Relavant Coursework:</span><br>Object Orientated Programming, Data Structures and Algorithms,
-                                Calculus I/II</li>
-                            <li><span>Leadership Expereince:</span><br>UMD Black Student Union: Freshman Council
-                                Executive-Board Treasurer</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
             </div>
-
         </div>
-    </div>
-    <!-- -----Services--------- -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Software Engineeing Intern</h2>
-                    <p>Willing and able to provide amazing production and service as a Software Engineeing Intern.</p>
-                   
-                </div>
-                <div>
-                    <i class="fa-solid fa-window-restore"></i>
-                    <h2>Cloud Engineering Intern</h2>
-                    <p>Willing and able to provide amazing production and service as a Cloud Engineeing Intern.</p>
-
-                </div>
-                <div>
-                    <i class="fa-solid fa-computer"></i>
-                    <h2>Data Analysis/ IT Intern</h2>
-                    <p>Willing and able to provide amazing production and service as a Data Analysis and or IT intern.
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Software Engineer • Builder • CS Student</p>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Peter Njoroge</span>
+                        <br>and I build useful software with real impact.
+                    </h1>
+                    <p class="hero-description">
+                        Computer Science student at the University of Maryland, College Park and University Honors scholar,
+                        passionate about software engineering, impactful development, and opening pathways for
+                        underrepresented talent in tech.
                     </p>
-                  
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="Images/newHeadshot.jpeg" alt="Peter Njoroge" class="profile-image">
+                        <div class="image-glow"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- -----Projects--------- -->
-    <div id="projects">
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <h1 class="sub-title">My Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Images/logo1.jpg">
-                    <div class="layer">
-                        <h3>PeterGotKicks</h3>
-                        <p>Developed a dynamic sneaker database website, resulting in a user-friendly platform that allows visitors to view detailed information about various sneaker models, by leveraging Express.js and Node.js for server-side routing and handling HTTP requests and HTML/CSS and JavaScript for the User Interface.</p>
-                        <a href="https://github.com/PeterNjoroge13/PeterGotKicks"  target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/hospitaledit.jpg">
-                    <div class="layer">
-                        <h3>Mock Hospital Database</h3>
-                        <p>Designed and implemented a Hospital Management System using Java Swing for the graphical user interface and
-                            Java for the backend, showcasing skills in backend engineering.</p>
-                        <a href="https://github.com/PeterNjoroge13/HospitalManagementDatabase"  target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/otvFinal.jpg">
-                    <div class="layer">
-                        <h3>Water Sampling OTV</h3>
-                        <p>Planned, constructed, and developed a specialized Automated Guided Vehicle (AGV) for water sampling tasks.
-                            Orchestrated AGV navigation to autonomously collect a 20ML water sample, utilizing Ultrasonic Sensor for depth
-                            measurement, DIY salinity sensor for water assessment, and integrated Arduino Color Sensor for pollution detection.</p>
-                        <a href="https://docs.google.com/presentation/d/1LcwFmxdH8cMm3QzI6pzajGubWqsy_Mw0POo9pj2a1Ao/edit#slide=id.g285f4baae2f_0_40" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A quick look at the work, tools, and mission behind the code</p>
             </div>
-        </div>
-    </div>
- <!-- -----Contact--------- -->
- <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me </h1>
-                <p><i class="fas fa-paper-plane"></i>peterkimani2005@yahoo.com</p>
-                <p><i class="fas fa-phone-square-alt"></i>(410)-424-8784</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/peter-njoroge13/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://app.joinhandshake.com/stu/users/51641342" target="_blank"><i class="fas fa-handshake"></i></a>
-                    <a href="https://github.com/PeterNjoroge13" target="_blank"> <i class="fab fa-github"></i></a>
-                </div>
-                <a href="Images/PeterNjorogeResume.pdf" download class="btn btn2">Download Resume</a>
-             </div>
-            <div class="contact-right">
-                <form name = "submit-to-google-sheet">
-<input type="text" name = "Name" placeholder="Your Name" required>
-<input type="email" name="Email"placeholder= "Your Email" required>
-<textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-<button type="submit" class="btn btn2">Submit</button>
-                </form> 
-               <span id="msg" ></span>
-            </div>
-        </div>
-
- </div>
-            <script>
-                var tablinks = document.getElementsByClassName("tab-links");
-                var tabcontents = document.getElementsByClassName("tab-contents");
-
-                function opentab(tabname) {
-                    for (tablink of tablinks) {
-                        tablink.classList.remove("active-link");
-                    }
-                    for (tabcontent of tabcontents) {
-                        tabcontent.classList.remove("active-tabs");
-                    }
-                    event.currentTarget.classList.add("active-link");
-                    document.getElementById(tabname).classList.add("active-tabs");
-                }
-            </script>
-            <script>
-                var sidemenu = document.getElementById("sidemenu");
-                function openmenu(){
-                    sidemenu.style.right ="0";
-                }
-                function closemenu(){
-                    sidemenu.style.right ="-200px";
-                }
-            </script>
             
-              
-              <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbyLOygZTiZYKBDU-tUaoL_fFMjhxZdYExKbCXEE0UUzXIBoRAatiK5mLgec8wZttQ-E/exec'
-                const form = document.forms['submit-to-google-sheet']
-                const msg= document.getElementById("msg")
-              
-                form.addEventListener('submit', e => {
-                  e.preventDefault()
-                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => {
-                        msg.innerHTML="Message Sent"
-                        setTimeout(function(){
-                        msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-                    .catch(error => console.error('Error!', error.message))
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p>Computer Science student at the University of Maryland, College Park, and a proud member of the University Honors College. I am focused on full-stack software engineering, cloud infrastructure, distributed systems, and products that make technical work easier for real people.</p>
+                        <p>My goal is to build excellent software while helping bridge the opportunity gap for underrepresented groups in technology. As president of Code: Black at UMD, I lead a 300+ member CS community centered on professional development, community programming, and diversity-focused technology initiatives.</p>
+                    </div>
+
+                    <div class="tabs-container">
+                        <div class="tab-navigation">
+                            <button class="tab-btn active" data-tab="skills">Skills</button>
+                            <button class="tab-btn" data-tab="experience">Experience</button>
+                            <button class="tab-btn" data-tab="education">Education</button>
+                        </div>
+                        
+                        <div class="tab-content active" id="skills">
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h4>Programming Languages</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Java</span>
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                        <span class="skill-tag">TypeScript</span>
+                                        <span class="skill-tag">OCaml</span>
+                                        <span class="skill-tag">Rust</span>
+                                        <span class="skill-tag">HTML/CSS</span>
+                                        <span class="skill-tag">C</span>
+                                        <span class="skill-tag">Node.js</span>
+                                        <span class="skill-tag">Express.js</span>
+                                        <span class="skill-tag">SQL</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Programs/Tools</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Claude Code</span>
+                                        <span class="skill-tag">Visual Studio Code</span>
+                                        <span class="skill-tag">Eclipse</span>
+                                        <span class="skill-tag">PyCharm</span>
+                                        <span class="skill-tag">Git</span>
+                                        <span class="skill-tag">Linux</span>
+                                        <span class="skill-tag">Arduino</span>
+                                        <span class="skill-tag">AutoCAD</span>
+                                        <span class="skill-tag">AWS Lambda</span>
+                                        <span class="skill-tag">AWS SNS/SQS</span>
+                                        <span class="skill-tag">DynamoDB</span>
+                                        <span class="skill-tag">AWS CDK</span>
+                                        <span class="skill-tag">Cursor</span>
+                                        <span class="skill-tag">OpenClaw</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Soft Skills</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Communication</span>
+                                        <span class="skill-tag">Problem-solving</span>
+                                        <span class="skill-tag">Adaptability</span>
+                                        <span class="skill-tag">Time Management</span>
+                                        <span class="skill-tag">Detail Orientation</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="experience">
+                            <div class="experience-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">June 2026–Present</div>
+                                    <div class="timeline-content">
+                                        <h4>Amazon — Software Development Engineering Intern, Box Optimization Team</h4>
+                                        <ul>
+                                            <li>Building scalable software for Amazon's Box team to optimize packaging efficiency and reduce environmental impact across global fulfillment operations.</li>
+                                            <li>Built an AI-powered audit trail system for Amazon's ALIAS packaging service with a real-time event pipeline that lets on-call engineers query complete annotation change history in seconds.</li>
+                                            <li>Reduced deployment overhead by building a self-updating AWS infrastructure pipeline with automated safety checks and environment-specific rollout policies across beta and production releases.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">May–Aug 2025</div>
+                                    <div class="timeline-content">
+                                        <h4>Amazon — Software Development Engineering Intern, Box Optimization Team</h4>
+                                        <ul>
+                                            <li>Developing scalable software solutions that power Amazon's Box team, optimizing packaging efficiency, and reducing environmental impact across global fulfillment operations impacting millions worldwide.</li>
+                                            <li>Engineered a cloud-native service using AWS Lambda, AWS SNS/SQS and DynamoDB to replace a server-based troubleshooting tool, enhancing scalability, reducing operational overhead, cutting service latency by 35%, and saving Box Team $100,000+/yr on storage and server maintenance cost.</li>
+                                            <li>Automated infrastructure deployment with AWS CDK and implemented error-handling monitoring systems and alarms, improving system performance and reducing manual maintenance.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">June 2025–Present</div>
+                                    <div class="timeline-content">
+                                        <h4>Safo Sports Group — Founding Engineer</h4>
+                                        <ul>
+                                            <li>Co-founded Safo Sports Group, an AI-powered NIL platform connecting college athletes with brands through data-driven matching; built the React/TypeScript frontend, Spring Boot backend, and matching service with secure authentication and real-time profile management.</li>
+                                            <li>Built entire infrastructure-as-code environment on AWS (ECS Fargate, RDS, Redis, ALB, S3) with multi-AZ redundancy and horizontal auto-scaling, increasing reliability and enabling production-ready CI/CD deployments.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">Summer 2024</div>
+                                    <div class="timeline-content">
+                                        <h4>Capital One Software Engineering Summit</h4>
+                                        <p>Participated in Capital One's Black & Hispanic Tech Summit, engaging in advanced tech workshops, and a competitive hackathon, while expanding my professional network and enhancing my problem-solving skills.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">September 2024</div>
+                                    <div class="timeline-content">
+                                        <h4>JPMorgan Chase (Code For Good)</h4>
+                                        <p>Participated in the highly selective CFG Hackathon, tasked with designing a technical solution for a non-profit organization.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="education">
+                            <div class="education-content">
+                                <div class="education-item">
+                                    <h4>University of Maryland College Park</h4>
+                                    <p>Bachelor of Science in Computer Science, Expected May 2027</p>
+                                    <p class="gpa">GPA: 3.5</p>
+                                </div>
+                                <div class="education-item">
+                                    <h4>Honors/Awards</h4>
+                                    <ul>
+                                        <li>"University-Honors" Honors College</li>
+                                        <li>Shewell Keim Scholarship in Computer Science</li>
+                                        <li>Capital One Scholarship in Computer Science</li>
+                                    </ul>
+                                </div>
+                                <div class="education-item">
+                                    <h4>Relevant Coursework</h4>
+                                    <div class="coursework-grid">
+                                        <span>Object Orientated Programming</span>
+                                        <span>Data Structures & Algorithms</span>
+                                        <span>Computer Systems</span>
+                                        <span>Organization of Programming Languages</span>
+                                        <span>Algorithms</span>
+                                        <span>Linear Algebra</span>
+                                        <span>Calculus I/II</span>
+                                        <span>Applied Probability & Statistics</span>
+                                        <span>Computer & Network Security</span>
+                                        <span>Data Science</span>
+                                        <span>Artificial Intelligence</span>
+                                    </div>
+                                </div>
+                                <div class="education-item">
+                                    <h4>Leadership Experience</h4>
+                                    <ul>
+                                        <li>Code: Black, UMD College Park, Maryland — President (June 2024–Present)</li>
+                                        <li>Lead a 300+ member CS organization creating opportunities for minorities in tech through professional development events, community programming, and diversity-centered technology initiatives.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Engineering Focus</h2>
+                <p class="section-subtitle">The kind of work I am strongest at</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Full-Stack Product Engineering</h3>
+                    <p>Building polished user experiences backed by practical APIs, secure authentication, real-time profile flows, and maintainable application architecture.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">Full-Stack Development</span>
+                        <span class="feature-tag">Modern Frameworks</span>
+                        <span class="feature-tag">Problem Solving</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3>Cloud-Native Systems</h3>
+                    <p>Designing serverless and containerized AWS systems with infrastructure as code, observability, autoscaling, and production-ready deployment pipelines.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">AWS Services</span>
+                        <span class="feature-tag">Scalable Architecture</span>
+                        <span class="feature-tag">DevOps</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>AI & Data-Driven Tools</h3>
+                    <p>Creating useful technical tools with AI-powered workflows, event pipelines, data-backed matching, and clear dashboards for better decision-making.</p>
+                    <div class="service-features">
+                        <span class="feature-tag">AI Workflows</span>
+                        <span class="feature-tag">Event Pipelines</span>
+                        <span class="feature-tag">Data Products</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Selected projects from product, nonprofit, ecommerce, and hardware spaces</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/home-tutoring.jpg" alt="NextDoorLearn Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/PeterNjoroge13" target="_blank" class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://github.com/PeterNjoroge13" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NextDoorLearn</h3>
+                        <p>Full-stack web application connecting underserved students with volunteer tutors using React, Node.js, Express, and SQLite. Implemented JWT authentication and role-based access control, with tutor discovery, connection requests, profile customization, and a secure messaging system with complete CRUD operations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/financial-literacy.jpg" alt="MyFGI Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/PeterNjoroge13" target="_blank" class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://github.com/PeterNjoroge13" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>MyFGI (JP Morgan Code For Good Hackathon)</h3>
+                        <p>Developed MyFGI, a platform enhancing financial literacy for the non-profit First Generation Investors. Led frontend development of a centralized student–tutor–admin hub using React.js and SQLite, implementing secure user authentication with React Router and Axios to cut login issues by over 50%.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/logo1.jpg" alt="PeterGotKicks Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/PeterNjoroge13/PeterGotKicks" target="_blank" class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://www.peterkgotkicks.com" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>PeterGotKicks</h3>
+                        <p>Developed a dynamic sneaker database website with a user-friendly platform for detailed sneaker information, using Express.js and Node.js for server-side routing and HTML/CSS and JavaScript for the UI. Implemented a product pricing feature using Rest APIs for real-time price comparisons from StockX, Goat, and FlightClub, saving users over $100 on some models.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Rest API</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/hospitaledit.jpg" alt="Hospital Database Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/PeterNjoroge13/HospitalManagementDatabase" target="_blank" class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://github.com/PeterNjoroge13/HospitalManagementDatabase" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mock Hospital Database</h3>
+                        <p>Designed and implemented a Hospital Management System using Java Swing for the graphical user interface and Java for the backend, showcasing skills in backend engineering.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Java Swing</span>
+                            <span class="tech-tag">Database Design</span>
+                            <span class="tech-tag">GUI Development</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Images/otvFinal.jpg" alt="Water Sampling OTV Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://docs.google.com/presentation/d/1LcwFmxdH8cMm3QzI6pzajGubWqsy_Mw0POo9pj2a1Ao/edit#slide=id.g285f4baae2f_0_40" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-presentation"></i>
+                                </a>
+                                <a href="https://docs.google.com/presentation/d/1LcwFmxdH8cMm3QzI6pzajGubWqsy_Mw0POo9pj2a1Ao/edit#slide=id.g285f4baae2f_0_40" target="_blank" class="project-link">
+                                    <i class="fa-solid fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Water Sampling OTV</h3>
+                        <p>Planned, constructed, and developed a specialized Automated Guided Vehicle (AGV) for water sampling tasks. Orchestrated AGV navigation to autonomously collect a 20ML water sample, utilizing Ultrasonic Sensor for depth measurement, DIY salinity sensor for water assessment, and integrated Arduino Color Sensor for pollution detection.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">Hardware</span>
+                            <span class="tech-tag">Sensors</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>peterkimani2005@yahoo.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>(410) 424-8784</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Baltimore, MD</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/peter-njoroge13/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/PeterNjoroge13" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://app.joinhandshake.com/stu/users/51641342" target="_blank" class="social-link">
+                            <i class="fas fa-handshake"></i>
+                            <span>Handshake</span>
+                        </a>
+                    </div>
+                    
+                    <a href="Images/PeterNjorogeResume.pdf" download class="btn btn-primary resume-btn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form name="submit-to-google-sheet" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="msg" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Peter Njoroge. All rights reserved.</p>
+                <p>Designed by Peter Njoroge</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Tab functionality for About section
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                // Show corresponding content
+                const targetTab = btn.getAttribute('data-tab');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contact form submission
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyLOygZTiZYKBDU-tUaoL_fFMjhxZdYExKbCXEE0UUzXIBoRAatiK5mLgec8wZttQ-E/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    msg.style.color = "#4CAF50";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
                 })
-              </script>
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    msg.innerHTML = "Error sending message. Please try again.";
+                    msg.style.color = "#f44336";
+                })
+                .finally(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 
 </html>
